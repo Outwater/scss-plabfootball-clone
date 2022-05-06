@@ -1,0 +1,32 @@
+{
+  "name": "FEDC2-7_CSS",
+  "version": "1.0.0",
+  "description": "모든 CSS 과제는 개발자 도구로 긁어오지 않고, 본인이 직접 구현해봅니다! 아래 두 과제 중 한 개를 수행해 주시면 됩니다. :)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "prod": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prgrms-fe-devcourse/FEDC2-7_CSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prgrms-fe-devcourse/FEDC2-7_CSS/issues"
+  },
+  "homepage": "https://github.com/prgrms-fe-devcourse/FEDC2-7_CSS#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
