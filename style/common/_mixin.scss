@@ -1,0 +1,43 @@
+@use "sass:map";
+
+@mixin media($key) {
+  $breakpoints: (
+    sm: 576px,
+    md: 1024px,
+    lg: 1400px,
+  );
+
+  @media all and (max-width: map.get($breakpoints, $key)) {
+    @content;
+  }
+}
+
+@mixin banner($type: "list", $fontColor: white, $bgColor: #009e5c) {
+  display: flex;
+  position: relative;
+  min-height: 120px;
+  padding: 30px;
+
+  background-color: $bgColor;
+  color: $fontColor;
+
+  @if ($type == "list") {
+    margin: 30px 0;
+  } @else if($type == "bottom") {
+    margin-top: 30px;
+  }
+
+  @include media(sm) {
+    padding: 15px;
+  }
+
+  @content;
+}
+
+@mixin pseudoElement($textContent: "", $fontSize: "1rem", $fontColor: black, $bgColor: white) {
+  content: $textContent;
+  font-size: $fontSize;
+  color: $fontColor;
+  background-color: $bgColor;
+  @content;
+}

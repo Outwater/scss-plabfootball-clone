@@ -2,29 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Webpack Start</title>
+    <title>Outwater's Plabfootball clone</title>
     <link rel="icon" type="image/png" sizes="192x192" href="./public/assets/favicon-192.png" />
   </head>
   <body>
     <div class="app">
       <header class="header">
-        <div class="header-container">
-          <div class="header-logo"><img src="./public/assets/logo.svg" /></div>
-          <div class="header-menu-container">
-            <div class="header-search-bar__show">
-              <img class="menu-item" src="./public/assets/ic_search.svg" />
-              <input class="header-search-input" placeholder="지역, 구장 이름으로 찾기" />
-            </div>
-            <div class="menu-item"><img src="./public/assets/ic_search.svg" /></div>
-            <div class="menu-item"><img src="./public/assets/ic_mymatch.svg" /></div>
-            <div class="menu-item"><img src="./public/assets/ic_my.svg" /></div>
-            <div class="menu-item"><img src="./public/assets/ic_modal_exit.svg" /></div>
+        <div class="header__logo"><img src="./public/assets/logo.svg" /></div>
+        <div class="header__menu">
+          <div class="header__menu-bar-search">
+            <img src="./public/assets/ic_search.svg" />
+            <input class="header__menu-bar-search__input" placeholder="지역, 구장 이름으로 찾기" />
+          </div>
+          <div class="header__menu-icon-search"><img src="./public/assets/ic_search.svg" /></div>
+          <div class="header__menu-icon"><img src="./public/assets/ic_mymatch.svg" /></div>
+          <div class="header__menu-icon"><img src="./public/assets/ic_my.svg" /></div>
+          <div class="header__menu-icon">
+            <img width="24px" src="./public/assets/ic_more.png" />
           </div>
         </div>
       </header>
       <main class="main">
         <nav class="navigation-tab">
-          <div class="navigation-tab__item selected">소셜 매치</div>
+          <div class="navigation-tab__item navigation-tab__item--selected">소셜 매치</div>
           <div class="navigation-tab__item">구장예약</div>
           <div class="navigation-tab__item">팀리그</div>
         </nav>
@@ -32,312 +32,305 @@
           <input type="radio" name="carousel" id="carousel-01" checked />
           <input type="radio" name="carousel" id="carousel-02" />
           <input type="radio" name="carousel" id="carousel-03" />
-          <div class="carousel-container">
-            <div class="carousel-wrapper">
+          <div class="carousel__list">
+            <div class="carousel__item">
               <img
-                class="carousel__iamge"
+                class="carousel__item-image"
                 src="./public/assets/banner_one_pc.png"
                 alt="banner-slide"
               />
-              <label class="carousel-label-left" for="carousel-03">
+              <label class="carousel__item-label carousel__item-label--left" for="carousel-03">
                 <img src="./public/assets/left_arrow_white.svg" alt="left-arrow" />
               </label>
-              <label class="carousel-label-right" for="carousel-02">
+              <label class="carousel__item-label carousel__item-label--right" for="carousel-02">
                 <img src="./public/assets/right_arrow_white.svg" alt="right-arrow" />
               </label>
-              <div class="carousel-label-btn">1 | 5</div>
+              <div class="carousel__item-label carousel__item-label--btn">1 | 5</div>
             </div>
-            <div class="carousel-wrapper">
+            <div class="carousel__item">
               <img
-                class="carousel__iamge"
+                class="carousel__item-image"
                 src="./public/assets/banner_two_pc.png"
                 alt="banner-slide"
               />
-              <label class="carousel-label-left" for="carousel-01">
+              <label class="carousel__item-label carousel__item-label--left" for="carousel-01">
                 <img src="./public/assets/left_arrow_white.svg" alt="left-arrow" />
               </label>
-              <label class="carousel-label-right" for="carousel-03">
+              <label class="carousel__item-label carousel__item-label--right" for="carousel-03">
                 <img src="./public/assets/right_arrow_white.svg" alt="right-arrow" />
               </label>
-              <div class="carousel-label-btn">2 | 5</div>
+              <div class="carousel__item-label carousel__item-label--btn">2 | 5</div>
             </div>
-            <div class="carousel-wrapper">
+            <div class="carousel__item">
               <img
-                class="carousel__iamge"
+                class="carousel__item-image"
                 src="./public/assets/banner_three_pc.png"
                 alt="banner-slide"
               />
-              <label class="carousel-label-left" for="carousel-02">
+              <label class="carousel__item-label carousel__item-label--left" for="carousel-02">
                 <img src="./public/assets/left_arrow_white.svg" alt="left-arrow" />
               </label>
-              <label class="carousel-label-right" for="carousel-01">
+              <label class="carousel__item-label carousel__item-label--right" for="carousel-01">
                 <img src="./public/assets/right_arrow_white.svg" alt="right-arrow" />
               </label>
-              <div class="carousel-label-btn">3 | 5</div>
+              <div class="carousel__item-label carousel__item-label--btn">3 | 5</div>
             </div>
           </div>
         </section>
-        <section class="filter">
-          <div class="filter__date-container">
-            <div class="filter__date-item selected">
-              <div class="filter__date-item__number">6</div>
-              <div class="filter__date-item__day">금</div>
+        <section>
+          <section class="match-filter">
+            <div class="match-filter__date-container">
+              <div class="match-filter__date-item match-filter__date-item--selected">
+                <div class="match-filter__date-item__number">6</div>
+                <div class="match-filter__date-item__day">금</div>
+              </div>
+              <div class="match-filter__date-item">
+                <div class="match-filter__date-item__number" style="color: #3534a5">7</div>
+                <div class="match-filter__date-item__day" style="color: #3534a5">토</div>
+              </div>
+              <div class="match-filter__date-item">
+                <div class="match-filter__date-item__number" style="color: #ea3e42">8</div>
+                <div class="match-filter__date-item__day" style="color: #ea3e42">일</div>
+              </div>
+              <div class="match-filter__date-item">
+                <div class="match-filter__date-item__number">9</div>
+                <div class="match-filter__date-item__day">월</div>
+              </div>
+              <div class="match-filter__date-item">
+                <div class="match-filter__date-item__number">10</div>
+                <div class="match-filter__date-item__day">화</div>
+              </div>
+              <div class="match-filter__date-item">
+                <div class="match-filter__date-item__number">11</div>
+                <div class="match-filter__date-item__day">수</div>
+              </div>
+              <div class="match-filter__date-item">
+                <div class="match-filter__date-item__number">12</div>
+                <div class="match-filter__date-item__day">목</div>
+              </div>
             </div>
-            <div class="filter__date-item">
-              <div class="filter__date-item__number" style="color: #3534a5">7</div>
-              <div class="filter__date-item__day" style="color: #3534a5">토</div>
+            <div class="match-filter__type-container">
+              <div class="match-filter__type-item match-filter__type-item--selected">서울/경기</div>
+              <div class="match-filter__type-item">혜택</div>
+              <div class="match-filter__type-item">마감 가리기</div>
+              <div class="match-filter__type-item">성별</div>
+              <div class="match-filter__type-item">레벨</div>
             </div>
-            <div class="filter__date-item">
-              <div class="filter__date-item__number" style="color: #ea3e42">8</div>
-              <div class="filter__date-item__day" style="color: #ea3e42">일</div>
+          </section>
+          <section class="match-list">
+            <div class="match-list__item">
+              <div class="match-list__time">14:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">피치 푸마 목동(홈플러스 목동점) 2구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMix"> 남녀모두 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isFull">마감</div>
             </div>
-            <div class="filter__date-item">
-              <div class="filter__date-item__number">9</div>
-              <div class="filter__date-item__day">월</div>
+            <div class="match-list__item">
+              <div class="match-list__time">16:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">서울 용산 아이파크몰 (5구장/뭔헨)</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isWomen"> 여자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isHurry">마감임박</div>
             </div>
-            <div class="filter__date-item">
-              <div class="filter__date-item__number">10</div>
-              <div class="filter__date-item__day">화</div>
+            <div class="match-list__item">
+              <div class="match-list__time">16:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">전주 두잇 풋살파크 A구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMen"> 남자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isFull">마감</div>
             </div>
-            <div class="filter__date-item">
-              <div class="filter__date-item__number">11</div>
-              <div class="filter__date-item__day">수</div>
+            <div class="match-list__item">
+              <div class="match-list__time">16:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">피치 부천(이마트 중동점)</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMen"> 남자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isFull">마감</div>
             </div>
-            <div class="filter__date-item">
-              <div class="filter__date-item__number">12</div>
-              <div class="filter__date-item__day">목</div>
+            <div class="match-list__item">
+              <div class="match-list__time">16:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">플랩 스타디움 가산 마리오</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMen"> 남자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isOpen">신청가능</div>
             </div>
-          </div>
-          <div class="filter__type-container">
-            <div class="filter_type-item selected">서울/경기</div>
-            <div class="filter_type-item">혜택</div>
-            <div class="filter_type-item">마감 가리기</div>
-            <div class="filter_type-item">성별</div>
-            <div class="filter_type-item">레벨</div>
-          </div>
+            <div class="match-list__item">
+              <div class="match-list__time">18:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">전주 두잇 풋살파크 A구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMen"> 남자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isOpen">신청가능</div>
+            </div>
+            <div class="match-list__item">
+              <div class="match-list__time">18:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">서울 은평 롯데몰 B구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMix"> 남녀모두 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isHurry">마감임박</div>
+            </div>
+            <div class="match-list__banner--list">
+              <div>
+                <h3>플랩스카웃 3,000 캐시 보상</h3>
+                <p>나만의 스카웃 코드 만들고, 유망주 발굴!</p>
+              </div>
+              <div class="banner__emoji">🦄</div>
+              <!-- <img class="banner__iamge" src="./public/assets/img_thunder.png" alt="banner-slide" /> -->
+            </div>
+            <div class="match-list__item">
+              <div class="match-list__time">20:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">피치 푸마 목동(홈플러스 목동점) 2구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMix"> 남녀모두 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isFull">마감</div>
+            </div>
+            <div class="match-list__item">
+              <div class="match-list__time">20:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">서울 용산 아이파크몰 (5구장/뭔헨)</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isWomen"> 여자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isHurry">마감임박</div>
+            </div>
+            <div class="match-list__item">
+              <div class="match-list__time">20:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">전주 두잇 풋살파크 A구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMen"> 남자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isFull">마감</div>
+            </div>
+            <div class="match-list__item">
+              <div class="match-list__time">22:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">플랩 스타디움 가산 마리오 1구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMen"> 남자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isOpen">신청가능</div>
+            </div>
+            <div class="match-list__item">
+              <div class="match-list__time">22:00</div>
+              <div class="match-list__content">
+                <div class="match-list__place">플랩 스타디움 가산 마리오 2구장</div>
+                <div class="match-list__option-container">
+                  <span class="match-list__option match-list__option--isMen"> 남자 </span>
+                  <span class="match-list__option"> 6vs6 </span>
+                  <span class="match-list__option"> 모든레벨 </span>
+                </div>
+              </div>
+              <div class="match-list__status-btn match-list__status-btn--isOpen">신청가능</div>
+            </div>
+          </section>
         </section>
-        <section class="list">
-          <div class="list__match-item">
-            <div class="list__match-time">14:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">피치 푸마 목동(홈플러스 목동점) 2구장</div>
-              <!-- <div class="list__match-place-status">New</div> -->
-              <div class="list__match-option">
-                <span class="match-option isMix"> 남녀모두 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isFull">마감</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">16:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">서울 용산 아이파크몰 (5구장/뭔헨)</div>
-              <div class="list__match-option">
-                <span class="match-option isWomen"> 여자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isHurry">마감임박</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">16:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">전주 두잇 풋살파크 A구장</div>
-              <div class="list__match-option">
-                <span class="match-option isMen"> 남자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isFull">마감</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">16:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">피치 부천(이마트 중동점)</div>
-              <div class="list__match-option">
-                <span class="match-option isMen"> 남자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isFull">마감</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">16:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">플랩 스타디움 가산 마리오</div>
-              <div class="list__match-option">
-                <span class="match-option isMen"> 남자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isOpen">신청가능</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">18:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">전주 두잇 풋살파크 A구장</div>
-              <div class="list__match-option">
-                <span class="match-option isMen"> 남자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isOpen">신청가능</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">18:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">서울 은평 롯데몰 B구장</div>
-              <!-- <div class="list__match-place-status">New</div> -->
-              <div class="list__match-option">
-                <span class="match-option isMix"> 남녀모두 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isHurry">마감임박</div>
-          </div>
-          <div class="banner-bottom middle">
-            <div class="banner-bottom__content">
-              <h3>나에게 딱 맞는 매치가 없으신가요?</h3>
-              <p>플레이를 원하는 매치를 플랩풋볼에게 알려주세요!</p>
-              <span class="banner-bottmom__btn">자세히보기</span>
-            </div>
-            <img
-              class="banner-bottom__iamge"
-              src="./public/assets/img_thunder.png"
-              alt="banner-slide"
-            />
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">20:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">피치 푸마 목동(홈플러스 목동점) 2구장</div>
-              <!-- <div class="list__match-place-status">New</div> -->
-              <div class="list__match-option">
-                <span class="match-option isMix"> 남녀모두 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isFull">마감</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">20:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">서울 용산 아이파크몰 (5구장/뭔헨)</div>
-              <div class="list__match-option">
-                <span class="match-option isWomen"> 여자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isHurry">마감임박</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">20:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">전주 두잇 풋살파크 A구장</div>
-              <div class="list__match-option">
-                <span class="match-option isMen"> 남자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isFull">마감</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">22:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">플랩 스타디움 가산 마리오 1구장</div>
-              <div class="list__match-option">
-                <span class="match-option isMen"> 남자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isOpen">신청가능</div>
-          </div>
-          <div class="list__match-item">
-            <div class="list__match-time">22:00</div>
-            <div class="list__match-content">
-              <div class="list__match-place">플랩 스타디움 가산 마리오 2구장</div>
-              <div class="list__match-option">
-                <span class="match-option isMen"> 남자 </span>
-                <span class="match-option"> 6vs6 </span>
-                <span class="match-option"> 모든레벨 </span>
-              </div>
-            </div>
-            <div class="list__match-status-btn isOpen">신청가능</div>
-          </div>
-        </section>
-        <div class="banner-bottom">
-          <div class="banner-bottom__content">
+        <div class="banner--bottom">
+          <div>
             <h3>나에게 딱 맞는 매치가 없으신가요?</h3>
             <p>플레이를 원하는 매치를 플랩풋볼에게 알려주세요!</p>
-            <span class="banner-bottmom__btn">자세히보기</span>
+            <span class="banner__btn">자세히보기</span>
           </div>
-          <img
-            class="banner-bottom__iamge"
-            src="./public/assets/img_thunder.png"
-            alt="banner-slide"
-          />
+          <img class="banner__iamge" src="./public/assets/img_thunder.png" alt="banner-slide" />
         </div>
       </main>
       <footer class="footer">
-        <ul class="footer-theme">
-          <h3>매치</h3>
-          <li>모든 매치</li>
-          <li>여자 매치</li>
-          <li>남여모두 매치</li>
-          <li>초급 매치</li>
-          <li>중급 매치</li>
-        </ul>
-        <ul class="footer-theme">
-          <h3>서비스지역</h3>
-          <li>서울</li>
-          <li>경기/강원</li>
-          <li>인천</li>
-          <li>광주/전라</li>
-          <li>제주</li>
-        </ul>
-        <ul class="footer-theme">
-          <h3>플랩풋볼</h3>
-          <li>플랩풋볼 소개</li>
-          <li>매니저 지원</li>
-          <li>채용</li>
-          <li>공지사항</li>
-          <li>자주 묻는 질문</li>
-          <li>1:1문의</li>
-        </ul>
-        <ul class="footer-theme">
-          <h3>소셜미디어</h3>
-          <li>인스타그램</li>
-          <li>페이스북</li>
-          <li>페이스북 그룹</li>
-        </ul>
-        <div class="footer-company">
-          <h2><span>plabfootball.com</span></h2>
-          <p>풋살하고 싶을 땐, 플랩풋볼</p>
-          <span>이용약관 | 개인정보 처리방침 | 사업자 정보 확인</span>
-          <br />
-          <span>
-            플랩풋볼 | 서울특별시 마포구 잔다리로31 제우피스빌딩 2층 | 대표 메일
-            contact@plabfootball.com | 마케팅 제안 team@plabfootball.com | 02-704-7983
-          </span>
-          <br />
-          <span>
-            주식회사 마이플레이컴퍼니 | 사업자번호 650-81-00575 | 대표 강동규 | 통신판매업 신고
-            2020-서울마포-4411
-          </span>
-          <br />
-          <span>Copyright <b>PLAB</b> All rights reserved.</span>
+        <div class="footer-container">
+          <ul class="footer-theme">
+            <h3>매치</h3>
+            <li>모든 매치</li>
+            <li>여자 매치</li>
+            <li>남여모두 매치</li>
+            <li>초급 매치</li>
+            <li>중급 매치</li>
+          </ul>
+          <ul class="footer-theme">
+            <h3>서비스지역</h3>
+            <li>서울</li>
+            <li>경기/강원</li>
+            <li>인천</li>
+            <li>광주/전라</li>
+            <li>제주</li>
+          </ul>
+          <ul class="footer-theme">
+            <h3>플랩풋볼</h3>
+            <li>플랩풋볼 소개</li>
+            <li>매니저 지원</li>
+            <li>채용</li>
+            <li>공지사항</li>
+            <li>자주 묻는 질문</li>
+            <li>1:1문의</li>
+          </ul>
+          <ul class="footer-theme">
+            <h3>소셜미디어</h3>
+            <li>인스타그램</li>
+            <li>페이스북</li>
+            <li>페이스북 그룹</li>
+          </ul>
+          <div class="footer-company">
+            <h2><span>plabfootball.com</span></h2>
+            <p>풋살하고 싶을 땐, 플랩풋볼</p>
+            <span>이용약관 | 개인정보 처리방침 | 사업자 정보 확인</span>
+            <br />
+            <span>
+              플랩풋볼 | 서울특별시 마포구 잔다리로31 제우피스빌딩 2층 | 대표 메일
+              contact@plabfootball.com | 마케팅 제안 team@plabfootball.com | 02-704-7983
+            </span>
+            <br />
+            <span>
+              주식회사 마이플레이컴퍼니 | 사업자번호 650-81-00575 | 대표 강동규 | 통신판매업 신고
+              2020-서울마포-4411
+            </span>
+            <br />
+            <span>Copyright <b>PLAB</b> All rights reserved.</span>
+          </div>
         </div>
       </footer>
     </div>
